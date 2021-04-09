@@ -1,7 +1,7 @@
 variable "config_name" {
   description = "The name of the AWS Config instance."
   type        = string
-  default     = "aws-config"
+  default     = "unosecur-config"
 }
 
 variable "config_aggregator_name" {
