@@ -55,7 +55,7 @@ resource "aws_config_config_rule" "iam-password-policy" {
 
 resource "aws_config_config_rule" "cloudtrail-enabled" {
   count       = var.check_cloudtrail_enabled ? 1 : 0
-  name        = "cloudtrail-enabled"
+  name        = "unosecur-trail-enabled"
   description = "Ensure CloudTrail is enabled"
 
   source {
